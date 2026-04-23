@@ -619,6 +619,58 @@
             </div>
         </div>
     </div>
+
+	<script>
+  const contactForm = document.getElementById("contactForm");
+  const contactStatus = document.getElementById("contactStatus");
+  const contactSubmitBtn = document.getElementById("contactSubmitBtn");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      contactStatus.textContent = "";
+      contactSubmitBtn.disabled = true;
+      contactSubmitBtn.textContent = "Sending...";
+
+      const formData = new FormData(contactForm);
+      const payload = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        subject: formData.get("subject"),
+        message: formData.get("message"),
+        website: formData.get("website")
+      };
+
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+
+        if (result.ok) {
+          contactStatus.textContent = "Your message has been sent successfully.";
+          contactStatus.style.color = "#16a34a";
+          contactForm.reset();
+        } else {
+          contactStatus.textContent = result.message || "Failed to send message.";
+          contactStatus.style.color = "#dc2626";
+        }
+      } catch (error) {
+        contactStatus.textContent = "A network error occurred. Please try again.";
+        contactStatus.style.color = "#dc2626";
+      } finally {
+        contactSubmitBtn.disabled = false;
+        contactSubmitBtn.textContent = "Submit";
+      }
+    });
+  }
+</script>
 </section>
 
 <!-- Footer -->
