@@ -636,7 +636,28 @@
     </div>
 </section>
 
-	<script>
+<!-- Footer -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="pull-left">
+                    &copy; Copyright Independent Digital Finance
+                </p>
+            </div>
+
+            <div class="col-md-8">
+                <ul class="footermenu pull-right">
+                    <li><a href="#home">Home</a></li>
+                    <!-- Buradaki linkleri sonra gerçek adreslerle değiştirebilirsin -->
+                    <a href="https://x.com/IDFI_Official" target="_blank">
+                   <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" class="footer-icon">
+                    </a>
+                    <a href="https://t.me/idficommunity" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" class="footer-icon">
+                    </a>
+                    </ul>
+<script>
   const contactForm = document.getElementById("contactForm");
   const contactStatus = document.getElementById("contactStatus");
   const contactSubmitBtn = document.getElementById("contactSubmitBtn");
@@ -671,15 +692,15 @@
 
         if (result.ok) {
           contactStatus.textContent = "Your message has been sent successfully.";
-          contactStatus.style.color = "#16a34a";
+          contactStatus.style.color = "#7CFC98";
           contactForm.reset();
         } else {
           contactStatus.textContent = result.message || "Failed to send message.";
-          contactStatus.style.color = "#dc2626";
+          contactStatus.style.color = "#ff8080";
         }
       } catch (error) {
         contactStatus.textContent = "A network error occurred. Please try again.";
-        contactStatus.style.color = "#dc2626";
+        contactStatus.style.color = "#ff8080";
       } finally {
         contactSubmitBtn.disabled = false;
         contactSubmitBtn.textContent = "Submit";
@@ -687,29 +708,7 @@
     });
   }
 </script>
-</section>
-
-<!-- Footer -->
-<div class="copyright">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <p class="pull-left">
-                    &copy; Copyright Independent Digital Finance
-                </p>
-            </div>
-
-            <div class="col-md-8">
-                <ul class="footermenu pull-right">
-                    <li><a href="#home">Home</a></li>
-                    <!-- Buradaki linkleri sonra gerçek adreslerle değiştirebilirsin -->
-                    <a href="https://x.com/IDFI_Official" target="_blank">
-                   <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" class="footer-icon">
-                    </a>
-                    <a href="https://t.me/idficommunity" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/telegram.svg" class="footer-icon">
-                    </a>
-                    </ul>
+				
             <!-- JQuery -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
