@@ -1,4 +1,4 @@
-﻿
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -282,182 +282,146 @@
     <!-- Our Team -->
     <!-- Services -->
     <!-- PORTFOLIO / METRICS -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="heading-center">
-                <h2 class="section-heading">PORTFOLIO &amp; METRICS</h2>
-                <hr>
-                <p class="section-subtitle">
-                    Live-inspired, testnet-driven analytics for the IDFI ecosystem. 
-                    Static values for now, ready for on-chain API integration in the future.
-                </p>
-            </div>
+<section id="portfolio">
+  <div class="container">
+    <div class="heading-center">
+      <h2 class="section-heading">PORTFOLIO &amp; METRICS</h2>
+      <hr>
+      <p class="section-subtitle">
+        Live BSC market metrics for the IDFI ecosystem. IDOLL / USDT is active on PancakeSwap V3
+        and tracked by DexScreener.
+      </p>
+    </div>
 
-            <!-- TOP METRICS CARDS -->
-            <div class="row idfi-metrics-row">
-                <div class="col-sm-3">
-                    <div class="idfi-metric-card">
-                        <div class="idfi-metric-label">Total Liquidity</div>
-                        <div class="idfi-metric-value">$9,737.22</div>
-                        <div class="idfi-metric-note">Across all active pools</div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="idfi-metric-card">
-                        <div class="idfi-metric-label">24h Volume</div>
-                        <div class="idfi-metric-value">$337.45</div>
-                        <div class="idfi-metric-note">Simulated bot + AMM flow</div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="idfi-metric-card">
-                        <div class="idfi-metric-label">LP Growth (Daily)</div>
-                        <div class="idfi-metric-value text-positive">+4.0%</div>
-                        <div class="idfi-metric-note">Target compound rate</div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="idfi-metric-card">
-                        <div class="idfi-metric-label">Active Pools</div>
-                        <div class="idfi-metric-value">2</div>
-                        <div class="idfi-metric-note">BSC &amp; Solana</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LIQUIDITY POOLS TABLE -->
-            <div class="idfi-panel">
-                <div class="idfi-panel-header">
-                    <h3 class="idfi-panel-title">Liquidity Pools Overview</h3>
-                    <span class="idfi-panel-tag">Phase: Testnet / Simulated</span>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-striped idfi-table">
-                        <thead>
-                            <tr>
-                                <th>Chain</th>
-                                <th>Pool</th>
-                                <th>Pair</th>
-                                <th class="text-right">Liquidity (USD)</th>
-                                <th class="text-right">24h Volume</th>
-                                <th class="text-right">Fees (24h)</th>
-                                <th class="text-right">APY (Est.)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>BSC</td>
-                                <td>PancakeSwap</td>
-                                <td>IDOLL / USDT</td>
-                                <td class="text-right">$4,889.65</td>
-                                <td class="text-right">$197.79</td>
-                                <td class="text-right">$4.67</td>
-                                <td class="text-right">18.2%</td>
-                            </tr>
-                            <tr>
-                                <td>Solana</td>
-                                <td>Raydium</td>
-                                <td>IDOLL / USDC</td>
-                                <td class="text-right">$4,847.57</td>
-                                <td class="text-right">$139.66</td>
-                                <td class="text-right">$2.99</td>
-                                <td class="text-right">16.7%</td>
-                            </tr>
-                            <tr class="idfi-table-total">
-                                <td colspan="3">Total</td>
-                                <td class="text-right">$9,737.22</td>
-                                <td class="text-right">$337.45</td>
-                                <td class="text-right">$7.66</td>
-                                <td class="text-right">~17.5%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="idfi-note">
-                    These values are simulated for demonstration purposes. On mainnet, this section will 
-                    be connected to DEX APIs and the IDFI LP Analytics Engine for near real-time data.
-                </p>
-            </div>
-
-            <!-- CHART + REVENUE ROW -->
-            <div class="row idfi-lower-row">
-                <div class="col-md-6">
-                    <div class="idfi-panel">
-                        <div class="idfi-panel-header">
-                            <h3 class="idfi-panel-title">Liquidity Breakdown</h3>
-                            <span class="idfi-panel-tag">By Peg Token</span>
-                        </div>
-                        <ul class="idfi-list">
-                            <li><span class="idfi-dot dot-idoll"></span> IDOLL pools ~ 60% of total liquidity</li>
-                            <li><span class="idfi-dot dot-ideu"></span> IDEU pools (planned) ~ 25% target share</li>
-                        </ul>
-                        <p class="idfi-note">
-                            The long-term goal is a diversified basket of peg assets with balanced liquidity across chains and pools.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="idfi-panel">
-                        <div class="idfi-panel-header">
-                            <h3 class="idfi-panel-title">Revenue &amp; Growth</h3>
-                            <span class="idfi-panel-tag">LP Engine</span>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <div class="idfi-submetric">
-                                    <div class="idfi-submetric-label">Today’s LP Revenue</div>
-                                    <div class="idfi-submetric-value">$7.66</div>
-                                    <div class="idfi-submetric-note">Simulated net fees</div>
-                                </div>
-                            </div>
-                            <div class="col-xs-6">
-                                <div class="idfi-submetric">
-                                    <div class="idfi-submetric-label">Monthly Projection</div>
-                                    <div class="idfi-submetric-value">$200 – $250</div>
-                                    <div class="idfi-submetric-note">Assuming ~4% daily LP growth</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row idfi-split-row">
-                            <div class="col-xs-6">
-                                <div class="idfi-split-box">
-                                    <div class="idfi-split-label">Bot Volume Share</div>
-                                    <div class="idfi-split-value">~ 65%</div>
-                                </div>
-                            </div>
-                            <div class="col-xs-6">
-                                <div class="idfi-split-box">
-                                    <div class="idfi-split-label">Organic AMM Flow</div>
-                                    <div class="idfi-split-value">~ 35%</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="idfi-note">
-                            IDs and strategies will be managed via Bot configs. The goal is to keep 
-                            volume organic, spreads healthy and LP growth transparent for the community.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FUTURE INTEGRATIONS -->
-            <div class="idfi-panel idfi-panel-last">
-                <div class="idfi-panel-header">
-                    <h3 class="idfi-panel-title">Next Steps &amp; Integrations</h3>
-                    <span class="idfi-panel-tag">Roadmap Snapshot</span>
-                </div>
-                <ul class="idfi-list">
-                    <li>Adding new peg-token pools (IDEU) on BSC &amp; Solana.</li>
-                    <li>Connecting the IDFI LP Analytics Engine directly to on-chain data feeds.</li>
-                    <li>Publishing bot strategy templates for community LP operators.</li>
-                    <li>Optional CEX visibility listings, with a focus on sustainable, transparent volume.</li>
-                </ul>
-            </div>
+    <div class="row idfi-metrics-row">
+      <div class="col-sm-3">
+        <div class="idfi-metric-card">
+          <div class="idfi-metric-label">Live Liquidity</div>
+          <div class="idfi-metric-value" id="idfi-liquidity">$0</div>
+          <div class="idfi-metric-note">IDOLL / USDT on BSC</div>
         </div>
-    </section>
+      </div>
+      <div class="col-sm-3">
+        <div class="idfi-metric-card">
+          <div class="idfi-metric-label">24h Volume</div>
+          <div class="idfi-metric-value" id="idfi-volume">$0</div>
+          <div class="idfi-metric-note">DEX + market activity</div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="idfi-metric-card">
+          <div class="idfi-metric-label">Price</div>
+          <div class="idfi-metric-value" id="idfi-price">$0.00</div>
+          <div class="idfi-metric-note">DexScreener live price</div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="idfi-metric-card">
+          <div class="idfi-metric-label">Market Engine</div>
+          <div class="idfi-metric-value text-positive" id="idfi-status">LIVE</div>
+          <div class="idfi-metric-note">Bot-assisted liquidity flow</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="idfi-panel">
+      <div class="idfi-panel-header">
+        <h3 class="idfi-panel-title">Live Liquidity Pool</h3>
+        <span class="idfi-panel-tag">Mainnet / BSC</span>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped idfi-table">
+          <thead>
+            <tr>
+              <th>Chain</th>
+              <th>DEX</th>
+              <th>Pair</th>
+              <th class="text-right">Price</th>
+              <th class="text-right">Liquidity</th>
+              <th class="text-right">24h Volume</th>
+              <th class="text-right">Status</th>
+              <th class="text-right">Explorer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BSC</td>
+              <td>PancakeSwap V3</td>
+              <td>IDOLL / USDT</td>
+              <td class="text-right" id="idfi-table-price">$0.00</td>
+              <td class="text-right" id="idfi-table-liquidity">$0</td>
+              <td class="text-right" id="idfi-table-volume">$0</td>
+              <td class="text-right text-positive" id="idfi-table-status">Live</td>
+              <td class="text-right">
+                <a href="https://dexscreener.com/bsc/0xe140405d26aaab39a05ab7e9ee8eaeba30c9b292" target="_blank">
+                  DexScreener
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="idfi-note">
+        Market data is pulled from DexScreener public API. Figures may change as on-chain liquidity,
+        swaps and pool balances update. Last update: <span id="idfi-updated">loading...</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  const PAIR_API = "https://api.dexscreener.com/latest/dex/pairs/bsc/0xe140405d26aaab39a05ab7e9ee8eaeba30c9b292";
+
+  function fmtUsd(value) {
+    const n = Number(value || 0);
+    if (n >= 1000000) return "$" + (n / 1000000).toFixed(2) + "M";
+    if (n >= 1000) return "$" + (n / 1000).toFixed(1) + "K";
+    return "$" + n.toFixed(2);
+  }
+
+  function setText(id, value) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+  }
+
+  async function loadIdfiMetrics() {
+    try {
+      const res = await fetch(PAIR_API, { cache: "no-store" });
+      const data = await res.json();
+      const pair = data && data.pairs && data.pairs[0];
+
+      if (!pair) throw new Error("DexScreener pair not found");
+
+      const price = Number(pair.priceUsd || 0);
+      const liquidity = pair.liquidity && pair.liquidity.usd ? pair.liquidity.usd : 0;
+      const volume24h = pair.volume && pair.volume.h24 ? pair.volume.h24 : 0;
+
+      setText("idfi-price", "$" + price.toFixed(4));
+      setText("idfi-liquidity", fmtUsd(liquidity));
+      setText("idfi-volume", fmtUsd(volume24h));
+
+      setText("idfi-table-price", "$" + price.toFixed(4));
+      setText("idfi-table-liquidity", fmtUsd(liquidity));
+      setText("idfi-table-volume", fmtUsd(volume24h));
+
+      setText("idfi-status", "LIVE");
+      setText("idfi-table-status", "Live");
+      setText("idfi-updated", new Date().toLocaleString());
+    } catch (err) {
+      setText("idfi-status", "API WAIT");
+      setText("idfi-table-status", "API Wait");
+      setText("idfi-updated", "DexScreener API unavailable");
+      console.warn("IDFI metrics error:", err);
+    }
+  }
+
+  loadIdfiMetrics();
+  setInterval(loadIdfiMetrics, 60000);
+})();
+</script>
 
 
         </div>
