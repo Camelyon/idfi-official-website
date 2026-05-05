@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 32 32" role="img" aria-label="Independent Euro IDEU">
+  <defs>
+    <linearGradient id="gold" x1="7" y1="4" x2="25" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE08A"/>
+      <stop offset="0.35" stop-color="#F7B91E"/>
+      <stop offset="0.7" stop-color="#D89108"/>
+      <stop offset="1" stop-color="#FFCF54"/>
+    </linearGradient>
+    <radialGradient id="navy" cx="50%" cy="42%" r="68%">
+      <stop offset="0" stop-color="#070A34"/>
+      <stop offset="1" stop-color="#01021A"/>
+    </radialGradient>
+    <path id="topArc" d="M 6.25 15.7 A 9.75 9.75 0 0 1 25.75 15.7"/>
+    <path id="bottomArc" d="M 9.4 23.65 A 10.2 10.2 0 0 0 22.6 23.65"/>
+  </defs>
+
+  <circle cx="16" cy="16" r="15.15" fill="url(#navy)"/>
+  <circle cx="16" cy="16" r="14.45" fill="none" stroke="url(#gold)" stroke-width="1.35"/>
+  <circle cx="16" cy="16" r="13.3" fill="none" stroke="url(#gold)" stroke-width="0.38" opacity="0.9"/>
+
+  <text font-family="Arial, Helvetica, sans-serif" font-size="2.40" font-weight="700" letter-spacing="0.21" fill="url(#gold)">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">INDEPENDENT EURO</textPath>
+  </text>
+
+  <text x="15" y="21.05" text-anchor="middle"
+        font-family="Arial Black, Arial, Helvetica, sans-serif"
+        font-size="17.11" font-weight="750" fill="url(#gold)">€</text>
+
+  <text font-family="Arial, Helvetica, sans-serif" font-size="2.75" font-weight="800" letter-spacing="0.75" fill="url(#gold)">
+    <textPath href="#bottomArc" startOffset="55%" text-anchor="middle">IDEU</textPath>
+  </text>
+</svg>

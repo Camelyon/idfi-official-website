@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 32 32" role="img" aria-label="Independent Digital Finance IDFI">
+  <defs>
+    <linearGradient id="gold" x1="6" y1="4" x2="26" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF0A8"/>
+      <stop offset="0.28" stop-color="#F9C43A"/>
+      <stop offset="0.58" stop-color="#D88A05"/>
+      <stop offset="1" stop-color="#FFD768"/>
+    </linearGradient>
+
+    <linearGradient id="goldSoft" x1="10" y1="9" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFEAA0"/>
+      <stop offset="0.45" stop-color="#F6B61F"/>
+      <stop offset="1" stop-color="#B86E00"/>
+    </linearGradient>
+
+    <radialGradient id="navy" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#090D3E"/>
+      <stop offset="1" stop-color="#01021A"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0.28" stdDeviation="0.18" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+
+    <path id="topArc" d="M 6.25 15.7 A 9.75 9.75 0 0 1 25.75 15.7"/>
+    <path id="bottomArc" d="M 9.4 23.65 A 10.2 10.2 0 0 0 22.6 23.65"/>
+  </defs>
+
+  <circle cx="16" cy="16" r="15.15" fill="url(#navy)"/>
+  <circle cx="16" cy="16" r="14.45" fill="none" stroke="url(#gold)" stroke-width="1.35"/>
+  <circle cx="16" cy="16" r="13.3" fill="none" stroke="url(#gold)" stroke-width="0.38" opacity="0.9"/>
+
+  <text font-family="Arial, Helvetica, sans-serif" font-size="1.45" font-weight="800" letter-spacing="0.15" fill="url(#gold)">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">INDEPENDENT DIGITAL FINANCE</textPath>
+  </text>
+
+  <!-- Premium full globe -->
+  <g filter="url(#softShadow)" stroke="url(#goldSoft)" stroke-width="0.86" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="16" cy="15.55" r="5.85"/>
+    <ellipse cx="16" cy="15.55" rx="2.35" ry="5.85"/>
+    <ellipse cx="16" cy="15.55" rx="5.85" ry="2.35"/>
+    <path d="M11.1 12.45 C12.45 13.12 14.05 13.45 16 13.45 C17.95 13.45 19.55 13.12 20.9 12.45"/>
+    <path d="M11.1 18.65 C12.45 17.98 14.05 17.65 16 17.65 C17.95 17.65 19.55 17.98 20.9 18.65"/>
+    <line x1="16" y1="9.7" x2="16" y2="21.4"/>
+    <line x1="10.15" y1="15.55" x2="21.85" y2="15.55"/>
+  </g>
+  <text font-family="Arial, Helvetica, sans-serif" font-size="3.50" font-weight="900" letter-spacing="0.75" fill="url(#gold)">
+    <textPath href="#bottomArc" startOffset="55%" text-anchor="middle">IDFI</textPath>
+  </text>
+</svg>
