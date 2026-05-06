@@ -8,24 +8,78 @@
   <!-- IDFI SEO & Social Meta -->
     <meta name="description" content="Independent Digital Finance Index (IDFI) – soft-pegged DeFi index on BSC & Solana powered by IDOLL, IDEU and the IDFI governance token.">
 
-    <!-- Open Graph -->
+    
     <meta property="og:title" content="IDFI – Independent Digital Finance Index">
     <meta property="og:description" content="Peg tokens, liquidity pools and automated market making for a transparent, yield-driven DeFi ecosystem.">
     <meta property="og:type" content="website">
-    <!-- Yayına alınca kendi alan adını yaz: -->
+    
     <meta property="og:url" content="https://idfi.finance/">
-    <!-- Paylaşım görseli: bu dosyayı /img klasörüne koy: 1200x630 civarı -->
-    <meta property="og:image" content="img/IDFI-logo-transparent.png">
+    
+    <meta property="og:image" content="img/idfi-logo.svg">
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@IDFI_Offical">
     <meta name="twitter:title" content="IDFI – Independent Digital Finance Index">
     <meta name="twitter:description" content="Built on BSC & Solana. Powered by IDOLL, IDEU and the IDFI governance token.">
-    <meta name="twitter:image" content="img/IDFI-logo-transparent.png">
+    <meta name="twitter:image" content="img/idfi-logo.svg">
 
   
   <style>
+  
+.hero {
+  padding: 34px 40px !important;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 0 0 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  filter:
+    drop-shadow(0 0 12px rgba(247,185,30,.22))
+    drop-shadow(0 0 24px rgba(247,185,30,.14));
+}
+
+@media (max-width: 720px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-right {
+    flex: none;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero-logo {
+    width: 118px;
+    height: 118px;
+  }
+}  
+  
+  
     :root {
       --bg: #0b1020;
       --card: rgba(255,255,255,0.06);
@@ -449,15 +503,24 @@
     </div>
   </div>
 
-  <div class="page">
-    <div class="wrap">
-      <div class="hero">
-        <h1 class="hero-title">IDFI Documentation</h1>
-        <p class="hero-sub">
-          Independent Digital Finance Index (IDFI) — a DeFi index ecosystem built on BSC &amp; Solana,
-          powered by soft‑pegged assets, transparent LP pools and automated routing.
-        </p>
-      </div>
+  <div class="hero">
+  <div class="hero-content">
+    <div class="hero-left">
+      <h1 class="hero-title">IDFI Documentation</h1>
+      <p class="hero-sub">
+        Independent Digital Finance Index (IDFI) — a DeFi index ecosystem built on BSC &amp; Solana,
+        powered by soft-pegged assets, transparent LP pools and automated routing.
+      </p>
+    </div>
+
+    <div class="hero-right">
+      <img src="img/idfi-logo-128x128.svg"
+           alt="IDFI Logo"
+           class="hero-logo">
+    </div>
+  </div>
+
+</div>
 
       <div class="doc-grid">
         <aside class="sidebar" aria-label="Documentation navigation">
@@ -494,8 +557,8 @@
 
         <main class="content" id="content">
           <!-- ======================================
-     DOCUMENTATION
-====================================== -->
+                     DOCUMENTATION
+          ====================================== -->
 <section id="documentation" class="section-doc">
     <div class="container">
         <div class="row">
@@ -518,7 +581,7 @@
                 </div>
             </div>
 
-            <!-- Sağ İçerik -->
+            
             <div class="col-md-9">
                 <!-- Overview -->
                 <div id="doc-overview" class="doc-section">
@@ -819,7 +882,12 @@
                                     <tr>
                                         <td>IDOLL</td>
                                         <td><span class="pill net-bsc">BSC</span></td>
-                                        <td class="addr"><span class="addr-wrap"><span class="addr-text">0x8E9AdB904824fDfBEc1a5f15c4146a23dc3453EF</span><button class="copy-btn" type="button" data-copy="TBA" title="Contract not published yet" disabled>Copy</button></span></td>
+                                        <td class="addr">
+                                        <span class="addr-wrap">
+                                        <span class="addr-text">0x8E9AdB904824fDfBEc1a5f15c4146a23dc3453EF</span>
+                                        <button class="copy-btn" type="button" data-copy="0x8E9AdB904824fDfBEc1a5f15c4146a23dc3453EF" title="Copy contract address">Copy</button>
+                                        </span>
+                                        </td>
                                         <td><span class="pill status-verified">Verified</span></td>
                                     </tr>
                                     <tr>
@@ -880,12 +948,15 @@
                             <li>Security & compliance principles,</li>
                             <li>Long-term roadmap.</li>
                         </ul>
+                        
+                        <a href="docs/IDFI_Whitepaper_v1.0.pdf" target="_blank"class="btn">
+                           Download Whitepaper (PDF)
+                        </a>
 
-                        <!-- PDF hazır olduğunda href'i güncelle -->
-                        <a href="docs/IDFI_Whitepaper_v1.pdf" target="_blank" class="btn is-disabled" aria-disabled="true" tabindex="-1" title="Coming soon — PDF will be published here after audit review.">Download Whitepaper (PDF)</a>
-                        <span class="doc-note doc-note-inline">
-                            (Coming soon — placeholder button.)
-                        </span>
+                            <span class="doc-note doc-note-inline">
+                                 Official IDFI Whitepaper v1.0
+                        </span>						
+                        
                     </div>
                 </div>
 
