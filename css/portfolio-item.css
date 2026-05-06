@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * Start Bootstrap - Portfolio Item HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -846,15 +846,15 @@ About
 }
 
 .dot-idoll {
-    background-color: #f1c40f; /* sarı */
+    background-color: #f1c40f; 
 }
 
 .dot-ideu {
-    background-color: #2980b9; /* mavi */
+    background-color: #2980b9; 
 }
 
 .dot-others {
-    background-color: #8e44ad; /* mor */
+    background-color: #8e44ad; 
 }
 
 /* Revenue cards */
@@ -1016,11 +1016,11 @@ About
 }
 
 .badge-dex {
-    background-color: #007bff; /* mavi */
+    background-color: #007bff; 
 }
 
 .badge-cex {
-    background-color: #f39c12; /* turuncu */
+    background-color: #f39c12; 
 }
 
 .exchange-card-text {
@@ -1175,14 +1175,9 @@ ul.footermenu li a:hover {
     width: 25px;
     height: 25px;
     margin-left: 10px;
-    filter: invert(1); /* dark mode uyumu için */
+    filter: invert(1); 
 }
 	
-/* =====================================================
-   IDFI EK İNCE AYARLAR (RESPONSIVE, AKTİF SEKMELER)
-   ===================================================== */
-
-/* Marka renklerini değişkene alalım (ileride işimize yarar) */
 :root {
     --idfi-navy: #02001b;
     --idfi-gold: #f2b843;
@@ -1191,21 +1186,21 @@ ul.footermenu li a:hover {
 }
 
 /* -----------------------------
-   1) NAVBAR / HEADER MOBİL AYARLARI
+   1) NAVBAR / HEADER
    ----------------------------- */
 
 @media (max-width: 991px) {
 
-    /* Logo yazısını mobilde biraz küçültelim */
+    
     .navbar-default .navbar-brand {
         font-size: 16px;
         line-height: 1.2;
         padding-top: 10px;
         padding-bottom: 10px;
-        white-space: normal; /* Taşma olursa alt satıra geçsin */
+        white-space: normal; 
     }
 
-    /* Menü linklerini biraz rahatlat */
+    
     .navbar-default .navbar-nav > li > a {
         font-size: 12px;
         padding-left: 10px;
@@ -1215,7 +1210,7 @@ ul.footermenu li a:hover {
 
 @media (max-width: 767px) {
 
-    /* Slider içeriğini ortalayalım ve yazıları küçültelim */
+    
     .home-slider .row {
         text-align: center;
     }
@@ -1235,23 +1230,21 @@ ul.footermenu li a:hover {
         text-align: center;
     }
 
-    /* About & Tokens bölümünde iki kolon alt alta gelsin,
-       araya nefes aldıracak boşluk girsin */
+    
     #about .col-md-4 {
         margin-bottom: 25px;
     }
 }
 
 /* -----------------------------
-   2) ABOUT & TOKENS – AKTİF PEK SEKME GÖRSEL GERİ BİLDİRİM
+   2) ABOUT & TOKENS 
    ----------------------------- */
 
-/* Varsayılan başlık rengi (sol menü) */
 #accordion .panel-heading .panel-title {
     color: #ffffff;
 }
 
-/* Açık olan (expanded) sekmeyi altın renkle belirginleştirelim */
+
 #accordion .panel-heading[aria-expanded="true"] {
     background-color: var(--idfi-gold);
 }
@@ -1260,20 +1253,20 @@ ul.footermenu li a:hover {
     color: var(--idfi-navy);
 }
 
-/* Hover’da hafif parlama etkisi */
+
 #accordion .panel-heading:hover {
     filter: brightness(1.05);
     cursor: pointer;
 }
 
-/* Panel gövdelerini biraz okunaklı yapalım */
+
 #accordion .panel-body {
     font-size: 13px;
     line-height: 1.6;
 }
 
 /* -----------------------------
-   3) MACBOOK MOCKUP – LOGO GÖRSELLERİ
+   3) MACBOOK MOCKUP - LOGO
    ----------------------------- */
 
 .md-macbook-pro {
@@ -1287,16 +1280,12 @@ ul.footermenu li a:hover {
     display: block;
 }
 
-/* Küçük ekranlarda cihazın etrafında gereksiz boşluk kalmasın */
+
 @media (max-width: 767px) {
     .md-macbook-pro {
         margin-top: 10px;
     }
 }
-
-/* -----------------------------
-   4) SLIDER OKLARI VE UP BUTONU – KÜÇÜK UX DOKUNUŞU
-   ----------------------------- */
 
 .carousel-control.left,
 .carousel-control.right {
@@ -1308,7 +1297,7 @@ ul.footermenu li a:hover {
     text-shadow: none;
 }
 
-/* Back-to-top butonuna hafif gölge verelim */
+
 .back-to-top {
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
@@ -1318,12 +1307,7 @@ ul.footermenu li a:hover {
    IDFI THEME TUNING (NAVBAR, BUTTONS, LINKS)
    ========================= */
 
-/* --- Marka renkleri ---
-   Koyu lacivert: #02001b
-   IDFI altın:     #f2b843
-*/
-
-/* NAVBAR GENEL */
+/* NAVBAR GENERAL */
 .navbar-default {
     background-color: #02001b;
     border-color: #02001b;
@@ -1341,7 +1325,7 @@ ul.footermenu li a:hover {
     color: #ffffff;
 }
 
-/* Menü linkleri */
+/* Menü links */
 .navbar-default .navbar-nav > li > a {
     color: #f2b843;
     text-transform: uppercase;
@@ -1355,7 +1339,7 @@ ul.footermenu li a:hover {
     background-color: transparent;
 }
 
-/* Aktif menü (seçili sekme) */
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -1364,12 +1348,12 @@ ul.footermenu li a:hover {
     border-bottom: 2px solid #f2b843;
 }
 
-/* Slider'daki turuncu vurguları IDFI altınına yaklaştırmak için */
+
 .colortext {
     color: #f2b843;
 }
 
-/* GENEL BUTON STİLİ */
+
 .btn-primary {
     background-color: #f2b843;
     border-color: #f2b843;
@@ -1401,7 +1385,7 @@ ul.footermenu li a:hover {
     color: #ffffff;
 }
 
-/* Footer linkleri hafif açalım */
+
 ul.footermenu li a {
     color: #bbbbbb;
 }
@@ -1410,7 +1394,7 @@ ul.footermenu li a:hover {
     color: #ffffff;
 }
 
-/* UP butonu (back-to-top) IDFI rengine çekelim */
+
 .back-to-top {
     background-color: #f2b843;
     color: #02001b;
@@ -1421,32 +1405,31 @@ ul.footermenu li a:hover {
     color: #02001b;
 }
 /* ================================
-   ABOUT & TOKENS – Macbook içi logo alanı
+   ABOUT & TOKENS – Macbook 
    ================================ */
 
-/* Macbook ekranı taşmasın */
+
 #about .md-screen {
     overflow: hidden;
 }
 
-/* Macbook ekranının içindeki logo alanı */
+
 #about .tab-featured-image {
     position: relative;
     width: 100%;
-    /* Sabit oranlı bir kutu: yaklaşık Macbook ekran oranı */
     height: 0;
-    padding-top: 62%; /* 58–65 arası oynayabilirsin, 62 genelde iyi durur */
+    padding-top: 62%; 
     text-align: center;
 }
 
-/* BÜTÜN token logoları için ORTAK ayar */
+
 #about .tab-featured-image img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    /* Oranı bozmadan sığdır */
+    
     max-width: 95%;
     max-height: 95%;
     width: auto !important;
@@ -1461,7 +1444,7 @@ ul.footermenu li a:hover {
 
 .section-doc {
     padding: 70px 0;
-    background-color: #ffe6ef; /* sitenin pembe arka planı ile uyumlu */
+    background-color: #ffe6ef; 
 }
 
 .doc-nav {
@@ -1592,7 +1575,7 @@ ul.footermenu li a:hover {
     font-size: 14px;
 }
 
-/* Mobil uyum */
+
 @media (max-width: 991px) {
     .doc-nav {
         position: static;
@@ -1601,7 +1584,7 @@ ul.footermenu li a:hover {
 }
 
 /* ======================================
-   SOCIAL ICONS (Contact bölümünde)
+   SOCIAL ICONS (Contact)
 ====================================== */
 
 .social-links {
@@ -1624,11 +1607,11 @@ ul.footermenu li a:hover {
 }
 
 .social-icon.social-x {
-    background-color: #14171A; /* X (Twitter) koyu siyah */
+    background-color: #14171A; 
 }
 
 .social-icon.social-tg {
-    background-color: #229ED9; /* Telegram mavi */
+    background-color: #229ED9; 
 }
 
 .social-icon:hover {
