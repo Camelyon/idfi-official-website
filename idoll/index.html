@@ -13,7 +13,7 @@
     @media(max-width:820px){.hero-grid,.two,.cards{grid-template-columns:1fr}.hero h1{text-align:center;font-size:36px}.hero p{text-align:center}.actions{justify-content:center}.nav{align-items:flex-start;flex-direction:column;padding:14px 0}.menu{justify-content:flex-start}.footer-inner{align-items:flex-start}.footer-links{justify-content:flex-start}}
     .market-cards{ display:flex; justify-content:center; gap:18px; flex-wrap:wrap;}.market-cards .card{width:270px; min-height:230px;}.footer{ margin-top:0;} 
     .live-market-cards{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin:0 0 24px;}.live-market-cards .card{min-height:120px;}.live-market-cards .metric{font-size:24px;}
-    @media(max-width:820px){.live-market-cards{grid-template-columns:1fr;}}
+    @media(max-width:820px){.live-market-cards{grid-template-columns:1fr;}}.btn-gold{ display:inline-block; padding:10px 18px; border-radius:8px; font-size:14px; font-weight:700;} .market-cards .btn-gold {margin-top:18px;}
   </style>
 </head>
 <body>
@@ -97,8 +97,8 @@
       <tr><th>DexScreener URL</th><td><a href="https://dexscreener.com/bsc/0xe140405d26aaab39a05ab7e9ee8eaeba30c9b292" target="_blank" rel="noopener">View IDOLL / USDT on DexScreener</a></td></tr>
       <tr><th>GeckoTerminal URL</th><td><a href="https://www.geckoterminal.com/bsc/pools/0xe140405d26aaab39a05ab7e9ee8eaeba30c9b292" target="_blank" rel="noopener">View pool on GeckoTerminal</a></td></tr>
       <tr><th>DexTools URL</th><td><a href="https://www.dextools.io/app/bnb/pair-explorer/0xe140405d26aaab39a05ab7e9ee8eaeba30c9b292" target="_blank" rel="noopener">View pair on DexTools</a></td></tr>
-    </table>
-  </div></section>
+      <tr><th>LiveCoinWatch URL</th><td><a href="https://www.livecoinwatch.com/price/IndependentDollar-IDOLL" target="_blank" rel="noopener">View IDOLL on LiveCoinWatch</a></td></tr></table>
+    </div></section>
 
   <section class="section"><div class="wrap two">
     <div class="card"><h2>Supply Profile</h2><div class="underline"></div><p>IDOLL uses an uncapped maximum supply model with operational minting controls. The contract is configured with a daily minting limit of 100,000 IDOLL. Current supply figures should always be verified on-chain.</p><p><span class="pill">Initial documented supply: 200,000 IDOLL</span></p><p><span class="pill">Current circulation supply: 250,000 IDOLL</span></p></div>
@@ -177,21 +177,22 @@
         <img src="img/coingecko-logo.png" alt="CoinGecko" style="max-height:54px; max-width:180px; margin-bottom:16px;">
         <h3>CoinGecko</h3>
         <p>Primary market-data listing target.</p>
-        <span class="pill">Planned</span>
+        <span class="pill">🟡 Planned</span>
       </div>
 
       <div class="card" style="text-align:center;">
         <img src="img/coinpaprika-logo.png" alt="CoinPaprika" style="max-height:54px; max-width:180px; margin-bottom:16px;">
         <h3>CoinPaprika</h3>
         <p>Market visibility and tracking platform.</p>
-        <span class="pill">Application Submitted</span>
+        <span class="pill">🔵 Application Submitted</span>
       </div>
 
       <div class="card" style="text-align:center;">
         <img src="img/livecoinwatch-logo.png" alt="LiveCoinWatch" style="max-height:54px; max-width:180px; margin-bottom:16px;">
         <h3>LiveCoinWatch</h3>
         <p>Additional public market-data visibility.</p>
-        <span class="pill">Application Submitted</span>
+        <span class="pill">🟢 Listed ✅ + View Platform</span>
+		<a class="btn btn-gold" style="margin-top:18px;" href="https://www.livecoinwatch.com/price/IndependentDollar-IDOLL" target="_blank">View on LiveCoinWatch</a>
       </div>
     </div>
   </div>
