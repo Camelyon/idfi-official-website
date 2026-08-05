@@ -63,7 +63,10 @@
 							<a class="page-scroll" href="#portfolio">PORTFOLIO & METRICS</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#exchanges">MARKETS & DATA PLATFORMS</a>
+							<a class="page-scroll" href="#liquidity-providers">LIQUIDITY</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#exchanges">MARKETS & DATA</a>
 						</li>
 				         <li>
 							<a class="page-scroll" href="#contact">CONTACT US</a>
@@ -93,7 +96,7 @@
 						</div>
 						<div class="fadein scaleInv anim_1">
 							<p class="carouselText2 animated fadeInLeftBig">
-							Built on BSC. Expanding toward a multi-chain liquidity ecosystem. Powered by IDOLL.
+								Built on BNB Smart Chain. Expanding toward a multi-chain liquidity ecosystem. Powered initially by IDOLL, with IDEU and IDFI planned.
 							</p>
 						</div>							
 						
@@ -159,8 +162,7 @@
                    <div class="well">
                    <h4><strong>
                    IDFI is a liquidity-first DeFi ecosystem built around soft-pegged assets and transparent on-chain liquidity infrastructure. 
-				   IDOLL is the first active ecosystem asset, 
-				   while IDEU and the future IDFI governance and utility token remain part of the long-term roadmap.</strong>
+				   IDOLL is the first active ecosystem asset, while IDEU and the future IDFI governance and utility token remain part of the long-term roadmap.</strong>
                    </h4>                  
                    </div>
                   <div class="container">
@@ -194,8 +196,8 @@
                         rel="noopener noreferrer"
                         class="token-link secondary">
                         View on BscScan
-                        </a>
-                          </div>  
+                       </a>
+                         </div>
                         </div>
                     </div>
                 </div> 
@@ -301,35 +303,39 @@
         and tracked by DexScreener.
       </p>
     </div>
+        <div class="idfi-metrics-grid">
 
-    <div class="row idfi-metrics-row">
-      <div class="col-sm-3">
-        <div class="idfi-metric-card">
-          <div class="idfi-metric-label">Live Liquidity</div>
-          <div class="idfi-metric-value" id="idfi-liquidity">$0</div>
-          <div class="idfi-metric-note">IDOLL / USDT on BSC</div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="idfi-metric-card">
-          <div class="idfi-metric-label">24h Volume</div>
-          <div class="idfi-metric-value" id="idfi-volume">$0</div>
-          <div class="idfi-metric-note">DEX + market activity</div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="idfi-metric-card">
-          <div class="idfi-metric-label">Price</div>
-          <div class="idfi-metric-value" id="idfi-price">$0.00</div>
-          <div class="idfi-metric-note">DexScreener live price</div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="idfi-metric-card">
-          <div class="idfi-metric-label">Market Engine</div>
-          <div class="idfi-metric-value text-positive" id="idfi-status">LIVE</div>
-          <div class="idfi-metric-note">Liquidity Flow</div>
-        </div>
+  <div class="idfi-metric-card">
+    <div class="idfi-metric-label">Live Liquidity</div>
+    <div class="idfi-metric-value" id="idfi-liquidity">$0</div>
+    <div class="idfi-metric-note">IDOLL / USDT on BSC</div>
+  </div>
+
+  <div class="idfi-metric-card">
+    <div class="idfi-metric-label">24h Volume</div>
+    <div class="idfi-metric-value" id="idfi-volume">$0</div>
+    <div class="idfi-metric-note">On-chain pool activity</div>
+  </div>
+
+  <div class="idfi-metric-card">
+    <div class="idfi-metric-label">Price</div>
+    <div class="idfi-metric-value" id="idfi-price">$0.0000</div>
+    <div class="idfi-metric-note">DexScreener live price</div>
+  </div>
+
+  <div class="idfi-metric-card">
+    <div class="idfi-metric-label">Fully Diluted Valuation</div>
+    <div class="idfi-metric-value" id="idfi-fdv">$0</div>
+    <div class="idfi-metric-note">DexScreener FDV estimate</div>
+  </div>
+
+  <div class="idfi-metric-card">
+    <div class="idfi-metric-label">Market Engine</div>
+    <div class="idfi-metric-value text-positive" id="idfi-status">LIVE</div>
+    <div class="idfi-metric-note">Bot-assisted liquidity flow</div>
+  </div>
+</div>
+    
       </div>
     </div>
 
@@ -380,6 +386,8 @@
   </div>
 </section>
 
+
+
 <script>
 (function () {
   const PAIR_API = "https://api.dexscreener.com/latest/dex/pairs/bsc/0xe140405d26aaab39a05ab7e9ee8eaeba30c9b292";
@@ -407,22 +415,27 @@
       const price = Number(pair.priceUsd || 0);
       const liquidity = pair.liquidity && pair.liquidity.usd ? pair.liquidity.usd : 0;
       const volume24h = pair.volume && pair.volume.h24 ? pair.volume.h24 : 0;
+	  const fdv = Number(pair.fdv || 0);
 
       setText("idfi-price", "$" + price.toFixed(4));
       setText("idfi-liquidity", fmtUsd(liquidity));
       setText("idfi-volume", fmtUsd(volume24h));
+	  setText("idfi-fdv", fmtUsd(fdv));
 
       setText("idfi-table-price", "$" + price.toFixed(4));
       setText("idfi-table-liquidity", fmtUsd(liquidity));
       setText("idfi-table-volume", fmtUsd(volume24h));
+	  setText("idfi-fdv", fmtUsd(fdv));
 
       setText("idfi-status", "LIVE");
       setText("idfi-table-status", "Live");
       setText("idfi-updated", new Date().toLocaleString());
+	  setText("idfi-fdv", fmtUsd(fdv));
     } catch (err) {
       setText("idfi-status", "API WAIT");
       setText("idfi-table-status", "API Wait");
       setText("idfi-updated", "DexScreener API unavailable");
+	  setText("idfi-fdv", "API WAIT");
       console.warn("IDFI metrics error:", err);
     }
   }
@@ -434,6 +447,98 @@
 
 
         </div>
+		
+		<!-- LIQUIDITY PROVIDERS -->
+<section id="liquidity-providers" class="idfi-lp-section">
+  <div class="container">
+
+    <div class="heading-center">
+      <h2 class="section-heading">LIQUIDITY PROVIDERS</h2>
+      <hr>
+
+      <p class="idfi-lp-lead">
+        Independent liquidity providers help deepen the IDOLL / USDT market,
+        improve swap execution and strengthen the long-term resilience of the
+        IDFI on-chain ecosystem.
+      </p>
+    </div>
+
+    <div class="row idfi-lp-row">
+
+      <div class="col-md-4">
+        <div class="idfi-lp-card">
+          <div class="idfi-lp-icon" aria-hidden="true">◈</div>
+
+          <h3>Transparent On-Chain Participation</h3>
+
+          <p>
+            Liquidity is supplied directly to the public PancakeSwap V3 pool.
+            Pool balances, positions, swaps and market activity remain
+            independently verifiable through blockchain explorers and public
+            analytics platforms.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="idfi-lp-card">
+          <div class="idfi-lp-icon" aria-hidden="true">↔</div>
+          
+          <h3>Trading-Fee Participation</h3>
+
+          <p>
+            Active LP positions may earn a share of the trading fees generated
+            inside their selected PancakeSwap V3 price ranges. Fee income is
+            determined by actual pool activity, position range and deployed
+            liquidity.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="idfi-lp-card">
+          <div class="idfi-lp-icon" aria-hidden="true">↗</div>
+
+          <h3>Liquidity-First Market Growth</h3>
+
+          <p>
+            IDFI supports continuous and measurable on-chain market activity.
+            This can help active LP positions encounter recurring fee-generating
+            swaps, but returns are never fixed, guaranteed or risk-free.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="idfi-lp-disclosure">
+      <strong>Liquidity provider notice:</strong>
+      Providing liquidity involves price-range, impermanent-loss,
+      smart-contract, token-price and market risks. Fee income varies with
+      trading activity and position management. Participation does not
+      constitute a deposit, interest product or guaranteed passive return.
+    </div>
+
+    <div class="idfi-lp-actions">
+      <a
+        class="idfi-lp-button primary"
+        href="https://pancakeswap.finance/liquidity"
+        target="_blank"
+        rel="noopener noreferrer">
+        View PancakeSwap Liquidity
+      </a>
+
+      <a
+        class="idfi-lp-button secondary"
+        href="https://dexscreener.com/bsc/0xe140405d26aaab39a05ab7e9ee8eaeba30c9b292"
+        target="_blank"
+        rel="noopener noreferrer">
+        Verify Live Pool
+      </a>
+    </div>
+
+  </div>
+</section>
        
               <!-- Exchanges & Aggregators -->
       <section id="exchanges">
@@ -541,10 +646,11 @@
                                 <div class="ex-logo-caption">
                                     <strong>GeckoTerminal</strong><br>
                                     <small>Tracking</small>
-								</div>
-                             </div>
+							</div>
+						   </div>
                         </div>
-					   <p class="ex-footnote">
+						
+						<p class="ex-footnote">
                            Additional market-data integrations and future multi-chain support will be introduced as liquidity, 
 						   holders and organic market participation continue to grow.
                         </p>
@@ -555,6 +661,7 @@
         </div>
     </div>
 </section>
+
 
 <!-- Contact -->
 <section id="contact" class="footer">
@@ -572,7 +679,7 @@
                 <p style="color:#ccc; font-size:13px; line-height:1.6;">
                     For official business, technical integration, market-data or general project inquiries, please use the contact form or the project’s official email channel.
                     <br><br>
-                    IDFI does not conduct listing negotiations, <strong>liquidity arrangements or commercial discussions</strong>.
+                    IDFI does not conduct listing negotiations, <strong>liquidity arrangements or commercial discussions</strong>
                     through Telegram or unsolicited direct messages.
                 </p>
             </div>
