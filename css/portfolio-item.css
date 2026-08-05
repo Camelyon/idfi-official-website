@@ -1620,5 +1620,267 @@ ul.footermenu li a:hover {
 }
 
 
+/* =========================================================
+   IDFI LIQUIDITY PROVIDERS SECTION
+   ========================================================= */
 
+.idfi-lp-section {
+  padding: 72px 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(2, 6, 29, 0.98),
+      rgba(12, 25, 72, 0.97)
+    );
+  color: #ffffff;
+}
 
+.idfi-lp-section .section-heading {
+  color: #ffffff;
+}
+
+.idfi-lp-section .heading-center hr {
+  width: 80px;
+  height: 2px;
+  margin: 16px auto 24px;
+  border: 0;
+  background: #f0b90b;
+}
+
+.idfi-lp-lead {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  color: #dce3f7;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.idfi-lp-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.idfi-lp-row > div {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.idfi-lp-card {
+  width: 100%;
+  min-height: 310px;
+  padding: 30px 26px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(240, 185, 11, 0.34);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+  text-align: center;
+}
+
+.idfi-lp-icon {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 20px;
+  align-items: center;
+  justify-content: center;
+  background: #f0b90b;
+  border-radius: 50%;
+  color: #02061d;
+  font-size: 25px;
+}
+
+.idfi-lp-card h3 {
+  min-height: 52px;
+  margin: 0 0 18px;
+  color: #f0b90b;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.idfi-lp-card p {
+  margin: 0;
+  color: #e4e9f7;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.idfi-lp-disclosure {
+  max-width: 960px;
+  margin: 14px auto 0;
+  padding: 18px 22px;
+  background: rgba(240, 185, 11, 0.10);
+  border: 1px solid rgba(240, 185, 11, 0.42);
+  border-radius: 9px;
+  color: #f3f5fb;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.idfi-lp-disclosure strong {
+  color: #f0b90b;
+}
+
+.idfi-lp-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.idfi-lp-button {
+  display: inline-block;
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.idfi-lp-button:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+  opacity: 0.94;
+}
+
+.idfi-lp-button.primary {
+  background: #f0b90b;
+  color: #02061d;
+}
+
+.idfi-lp-button.secondary {
+  background: transparent;
+  border: 1px solid #f0b90b;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .idfi-lp-row {
+    display: block;
+  }
+
+  .idfi-lp-card {
+    min-height: 0;
+  }
+
+  .idfi-lp-card h3 {
+    min-height: 0;
+  }
+}
+/* IDOLL OFFICIAL LINKS */
+
+.token-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.token-link {
+  display: block;
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.token-link:hover {
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+.token-link.primary {
+  background: #f0b90b;
+  color: #02061d;
+}
+
+.token-link.secondary {
+  background: #02061d;
+  border: 1px solid #f0b90b;
+  color: #ffffff;
+}
+
+}
+.idfi-metrics-grid > [class*="col-"] {
+  float: none !important;
+  width: auto !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.idfi-metrics-grid > [class*="col-"] > .idfi-metric-card {
+  height: 100%;
+  margin-bottom: 0;
+}
+#portfolio {
+  padding: 70px 0 90px;
+  background-color: #e6e6e6;
+}
+.idfi-lp-icon {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+/* =========================================================
+   IDFI LIVE METRICS — FIVE CARD GRID
+   ========================================================= */
+
+.idfi-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  margin: 30px 0 48px;
+}
+
+.idfi-metrics-grid .idfi-metric-card {
+  min-width: 0;
+  min-height: 138px;
+  padding: 20px 18px;
+  background: #ffffff;
+  border: 1px solid #e4e7ed;
+  border-radius: 10px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.06);
+}
+
+.idfi-metrics-grid .idfi-metric-label {
+  min-height: 34px;
+  margin-bottom: 7px;
+  color: #777777;
+  font-size: 12px;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.idfi-metrics-grid .idfi-metric-value {
+  margin-bottom: 7px;
+  color: #111111;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.idfi-metrics-grid .idfi-metric-note {
+  color: #888888;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.idfi-metrics-grid .text-positive {
+  color: #10a64a;
+}
+
+@media (max-width: 1199px) {
+  .idfi-metrics-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .idfi-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
