@@ -484,7 +484,8 @@
     }
 
   </style>
-
+ <!-- Vercel Web Analytics -->
+<script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </head>
 
 <body>
@@ -534,6 +535,7 @@
             <li><a href="#doc-architecture">Protocol Architecture</a></li>
             <li><a href="#doc-token-suite">Token Suite</a></li>
             <li><a href="#doc-tokenomics">Tokenomics</a></li>
+			<li><a href="#doc-lp-providers">Liquidity Providers</a></li>
             <li><a href="#doc-liquidity">Liquidity & Peg Mechanism</a></li>
             <li><a href="#doc-contracts">Networks & Contracts</a></li>
             <li><a href="#doc-security">Security & Fake Tokens</a></li>
@@ -545,9 +547,9 @@
           <div class="doc-card" style="margin-top:12px;">
             <h4 style="margin-bottom:8px;">Verified Socials</h4>
             <p class="doc-note" style="margin-top:0;">
-              Official announcements & contract updates are published on verified channels only.
+              Official announcements & contract updates are published on verified channels only. 
             </p>
-            <div class="diagram-meta" style="margin-top:10px;">
+			   <div class="diagram-meta" style="margin-top:10px;">
               <a class="badge" href="https://x.com/IDFI_Offical" target="_blank" rel="noopener">X / Twitter: @IDFI_Offical</a>
                <a class="badge" href="https://t.me/idficommunity" target="_blank" rel="noopener">Telegram</a>
             </div>
@@ -570,8 +572,11 @@
                     <h3 class="doc-nav-title">DOCUMENTATION</h3>
                     <ul class="doc-nav-list">
                         <li><a href="#doc-overview">Overview</a></li>
+						<li><a href="#doc-architecture">Protocol Architecture</a></li>
                         <li><a href="#doc-token-suite">Token Suite</a></li>
                         <li><a href="#doc-tokenomics">Tokenomics</a></li>
+						<li><a href="#doc-lp-providers">Liquidity Providers</a></li>
+						<li><a href="#doc-liquidity">Liquidity & Peg Mechanism</a></li>
                         <li><a href="#doc-contracts">Networks & Contracts</a></li>
                         <li><a href="#doc-security">Security & Fake Tokens</a></li>
                         <li><a href="#doc-whitepaper">Whitepaper</a></li>
@@ -852,6 +857,51 @@
                         </ul>
                     </div>
                 </div>
+				
+				<!-- Liquidity Providers -->
+				<div id="doc-lp-providers" class="doc-section">
+				     <h2>Liquidity Providers</h2>
+					 <div class="doc-card">
+                        <h4>Why LP Providers Matter?</h4>
+						<p>
+						Liquidity Providers are the foundation of the IDFI ecosystem.</p>
+                        
+						<p>
+						Instead of relying on centralized market makers, IDFI grows through transparent 
+						on-chain liquidity supplied by the community and ecosystem participants.</p>
+                        </div>
+						
+						<div class="doc-card">
+						<h4>Liquidity Providers Help:</h4>
+						<p>The protocol is designed so that deeper liquidity enables more efficient routing and healthier 
+						   trading conditions across all IDFI assets.</p>
+						 
+						 <ul class="doc-list">
+                            <li>Increase market depth.</li>
+                            <li>Reduce slippage.</li>
+							<li>Improve peg stability.</li>
+							<li>Strengthen price discovery.</li>
+                            <li>Support long-term ecosystem growth.</li>
+						</ul>
+                    </div>
+					
+					<div class="doc-card">
+						<h4>This Activity Is Intended To Support:</h4>
+						
+						<p>IDFI maintains transparent on-chain market activity through its automated liquidity engine.</p>
+						
+						<p>The objective is not to guarantee returns, but to promote an active decentralized market 
+							where liquidity providers can participate under transparent market conditions.</p>
+						
+						 <ul class="doc-list">
+                            <li>Healthier pool utilization.</li>
+                            <li>Recurring swap execution.</li>
+							<li>Improved price discovery.</li>
+							<li>sustainable liquidity growth.</li>
+				        </ul>
+                    </div>
+                </div>
+					 
 
                 <!-- Networks & Contracts -->
                 <div id="doc-contracts" class="doc-section">
@@ -925,6 +975,7 @@
                         <ul class="doc-list">
                             <li>Always verify contract addresses from the official documentation page.</li>
                             <li>Beware of similarly named or typo-tokens.</li>
+							<li>Liquidity information and official pools are also published only through this documentation and verified social channels.</li>
                             <li>Team will <strong>never</strong> send DMs requesting private keys, seed phrases or OTC trades.</li>
                         </ul>
                     </div>
@@ -1126,11 +1177,104 @@
 							</div>
                         </div>
 						
-						    <div class="faq-item">
+                            <div class="faq-item">
                             <a data-toggle="collapse" href="#faq11" class="faq-question">
-                                What risks are involved?
+                                What is a Liquidity Provider (LP)?
                             </a>
                             <div id="faq11" class="collapse">
+                                <p class="faq-answer">
+                                    A liquidity provider supplies tokens to decentralized liquidity pools.
+                                    These pools enable token swaps, improve market depth and reduce slippage across the ecosystem.
+                                </p>
+                                  
+							</div>
+                        </div>
+
+                            <div class="faq-item">
+                            <a data-toggle="collapse" href="#faq12" class="faq-question">
+                                Why are LP providers important?
+                            </a>
+                            <div id="faq12" class="collapse">
+                                <p class="faq-answer">
+                                    LP providers are essential for maintaining healthy trading conditions.
+                                    Deeper liquidity helps support peg ranges, improves routing efficiency 
+									and creates a more resilient decentralized market.
+                                </p>
+                                  
+							</div>
+                        </div> 
+						
+						     <div class="faq-item">
+                            <a data-toggle="collapse" href="#faq13" class="faq-question">
+                                Why does market activity matter for LP providers?
+                            </a>
+                            <div id="faq13" class="collapse">
+                                <p class="faq-answer">
+								<ul class="doc-list"> 
+                                    <li>Market activity allows liquidity pools to process swaps.</li>
+                                    <li>An active market can improve fee generation opportunities, 
+									strengthen price discovery and help maintain healthier liquidity utilization over time.</li>
+                                    <li>IDFI's automated market-making engine is designed to support these conditions through 
+									transparent on-chain trading activity.</li>
+                                </p>
+                               <ul/>  
+							</div>
+                        </div>	
+
+                            <div class="faq-item">
+                            <a data-toggle="collapse" href="#faq14" class="faq-question">
+                                Does IDFI guarantee LP rewards?
+                            </a>
+                            <div id="faq14" class="collapse">
+                                <p class="faq-answer">
+                                    No. 
+									LP returns depend on market activity, trading volume, protocol fees and market conditions.
+                                    IDFI does not guarantee profits or fixed returns.
+                                </p>
+                                  
+							</div>
+                        </div>
+
+                            <div class="faq-item">
+                            <a data-toggle="collapse" href="#faq15" class="faq-question">
+                                Does IDFI operate its own liquidity?
+                            </a>
+                            <div id="faq15" class="collapse">
+                                <p class="faq-answer">
+                                    Yes.
+									The ecosystem may maintain protocol-owned liquidity together with community-provided liquidity 
+									in order to support transparent markets and healthy trading conditions.
+                                </p>
+                                  
+							</div>
+                        </div>
+
+                            <div class="faq-item">
+                            <a data-toggle="collapse" href="#faq16" class="faq-question">
+                                How does IDFI support liquidity providers?
+                            </a>
+                            <div id="faq16" class="collapse">
+                                <p class="faq-answer">
+								<ul class="doc-list"> 
+                                    <li>IDFI supports the IDOLL / USDT liquidity pool through continuous on-chain market activity, 
+									transparent liquidity operations and automated market-making strategies.</li>
+                                    <li>Rather than promising fixed returns, the ecosystem is designed to 
+									encourage healthy trading activity that may improve pool utilization, 
+									generate recurring swap volume and strengthen long-term liquidity depth</li>
+                                    <li>IDFI does not manage independent third-party LP positions. 
+									Every liquidity provider remains responsible for selecting, 
+									monitoring and adjusting their own PancakeSwap V3 price ranges.</li>
+                                </p>
+                               <ul/>  
+							
+							</div>
+                        </div>		
+                            							
+						    <div class="faq-item">
+                            <a data-toggle="collapse" href="#faq17" class="faq-question">
+                                What risks are involved?
+                            </a>
+                            <div id="faq17" class="collapse">
                                 <p class="faq-answer">
                                     As with any DeFi protocol, risks may include smart-contract vulnerabilities, 
 									liquidity shocks, temporary peg deviations, slippage, volatility, 
@@ -1142,10 +1286,10 @@
                         </div>
 						
 						    <div class="faq-item">
-                            <a data-toggle="collapse" href="#faq12" class="faq-question">
+                            <a data-toggle="collapse" href="#faq18" class="faq-question">
                                 How does IDFI generate value?
                             </a>
-                            <div id="faq12" class="collapse">
+                            <div id="faq18" class="collapse">
                                 <p class="faq-answer">
                                     IDFI generates value through ecosystem growth, liquidity activity, fee flow and protocol utility. 
 									As the liquidity engine, peg-token pairs and market operations expand, 
